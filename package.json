@@ -1,0 +1,31 @@
+{
+  "name": "s3-watch-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "serverless offline start --reloadHandler --stage local",
+    "clean": "rm -rf .serverless .pytest_cache .mypy_cache .coverage .pytest_cache .mypy_cache .ruff_cache htmlcov",
+    "deploy": "serverless deploy --verbose --stage dev --region ap-northeast-1",
+    "deploy:dev": "serverless deploy --verbose --stage dev --region ap-northeast-1",
+    "deploy:stage": "serverless deploy --verbose --stage stage --region ap-northeast-1"
+  },
+  "keywords": [],
+  "author": "Takahashi Katsuyuki (kattakaha.k@world-wing.com) <https://github.com/kkml4220>",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-deployment-bucket": "^1.6.0",
+    "serverless-ignore": "^0.2.1",
+    "serverless-offline": "^13.4.0",
+    "serverless-plugin-tracing": "^2.0.0",
+    "serverless-prune-plugin": "^2.0.2",
+    "serverless-prune-versions": "^1.0.4",
+    "serverless-python-requirements": "^6.1.0"
+  },
+  "volta": {
+    "node": "20.9.0",
+    "npm": "10.1.0"
+  }
+}
