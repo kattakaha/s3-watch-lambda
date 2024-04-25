@@ -19,6 +19,11 @@ var/
 # Serverless directories
 .serverless
 poetry.lock
+.pytest_cache/
+htmlcov/
+.venv/
 
 .env
 node_modules/
+.coverage
+__pycache__/
