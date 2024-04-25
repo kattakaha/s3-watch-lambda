@@ -1,0 +1,3 @@
+# s3-watch-lambda
+
+S3 を Watch してログを残す lambda handler 実験したかったので作っただけ...
